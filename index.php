@@ -3,7 +3,7 @@
     <?php require "layout/head.php";?>
 
     <body>
-        <div id="app">
+        <div class="p-3 mb-2 bg-info text-dark" id="app">
             <?php require "layout/sidebar.php";?>
             <div id="main">
                 <header class="mb-3">
@@ -12,27 +12,27 @@
                     </a>
                 </header>
                 <div class="page-heading">
-                    <h3>Dashboard</h3>
+                    <h3 class="text-dark">Dashboard</h3>
                 </div>
                 <div class="page-content">
                     <section class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Sistem Pendukung Keputusan Manajer IT Terbaik</h4>
+                                    <h4>SPK Pembelian Laptop Menggunakan 
+                                        Metode SAW (Simple Additive Weighting) Berbasis Web</h4>
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body">
                                         <p class="card-text">
-                                            Metode Simple Additive Weighting (SAW) sering juga dikenal istilah metode
-                                            penjumlahan terbobot. Konsep dasar metode SAW adalah mencari penjumlahan
-                                            terbobot dari rating kinerja pada setiap alternatif pada semua atribut
-                                            (Fishburn 1967). SAW dapat dianggap sebagai cara yang paling mudah dan
-                                            intuitif untuk menangani masalah Multiple Criteria Decision-Making MCDM,
-                                            karena fungsi linear additive dapat mewakili preferensi pembuat keputusan
-                                            (Decision-Making, DM). Hal tersebut dapat dibenarkan, namun, hanya ketika
-                                            asumsi preference independence (Keeney & Raiffa 1976) atau preference
-                                            separability (Gorman 1968) terpenuhi.
+                                        Sistem Pendukung Keputusan (SPK) atau Decision Support Systems (DSS) merupakan 
+                                        salah satu bagian dari sistem informasi berbasis komputer yang dipakai untuk mendukung pengambilan 
+                                        keputusan dalam suatu organisasi atau perusahaan. Konsep dasar metode SAW adalah mencari
+                                         penjumlahan terbobot dari rating kinerja pada setiap alternatif dari semua atribut 
+                                         (Fishburn, 1967) [3]. Skor total untuk alternatif diperoleh dengan menjumlahkan seluruh 
+                                         hasil perkalian antara rating (yang dapat dibandingkan lintas atribut) dan bobot tiap atribut.
+                                          Rating tiap atribut haruslah bebas dimensi dalam arti telah melewati proses normalisasi 
+                                          matriks sebelumnya. (bundet, 2020)
                                         </p>
                                         <hr>
                                         <p class="card-text">

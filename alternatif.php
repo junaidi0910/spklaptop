@@ -6,7 +6,7 @@ require "include/conn.php";
 ?>
 
     <body>
-        <div id="app">
+        <div class="p-3 mb-2 bg-info text-dark" id="app">
             <?php require "layout/sidebar.php";?>
             <div id="main">
                 <header class="mb-3">
@@ -27,10 +27,9 @@ require "include/conn.php";
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body">
-                                        <p class="card-text">
-                                            Data-data mengenai kandidat yang akan dievaluasi di representasikan dalam
-                                            tabel berikut:
-                                        </p>
+                                        <h6 class="card-text">
+                                            Data-data mengenai kandidat Laptop(Jenis) :
+                                        </h6>
                                     </div>
                                     <button type="button" class="btn btn-outline-success btn-sm m-2" data-bs-toggle="modal"
                                         data-bs-target="#inlineForm">
@@ -39,7 +38,7 @@ require "include/conn.php";
                                     <hr>
                                     <div class="table-responsive">
                                         <table class="table table-striped mb-0">
-                                            <caption>
+                                            <caption class="text-dark">
                                                 Tabel Alternatif A<sub>i</sub>
                                             </caption>
                                             <tr>
@@ -57,14 +56,14 @@ while ($row = $result->fetch_object()) {
         <td>
         <div class='btn-group mb-1'>
         <div class='dropdown'>
-            <button class='btn btn-primary dropdown-toggle me-1 btn-sm' type='button'
+            <button class='btn btn-warning dropdown-toggle me-1 btn-sm' type='button'
                 id='dropdownMenuButton' data-bs-toggle='dropdown'
                 aria-haspopup='true' aria-expanded='false'>
                 Aksi
             </button>
             <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
                 <a class='dropdown-item' href='alternatif-edit.php?id={$row->id_alternative}'>Edit</a>
-                <a class='dropdown-item' href='alternatif-hapus.php?id={$row->id_alternative}'>Hapus</a>
+                <a class='text-danger dropdown-item' href='alternatif-hapus.php?id={$row->id_alternative}'>Hapus</a>
             </div>
         </div>
     </div>
@@ -88,16 +87,16 @@ $result->free();
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel33">Login Form </h4>
+                        <h4 class="modal-title" id="myModalLabel33">Form Tambah Data</h4>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <i data-feather="x"></i>
                         </button>
                     </div>
                     <form action="alternatif-simpan.php" method="POST">
                         <div class="modal-body">
-                            <label>Name: </label>
+                            <label>Nama :</label>
                             <div class="form-group">
-                                <input type="text" name="name" placeholder="Nama Kandidat..." class="form-control"
+                                <input type="text" name="name" placeholder="Nama Jenis Laptop..." class="form-control"
                                     required>
                             </div>
                         </div>
@@ -106,7 +105,7 @@ $result->free();
                                 <i class="bx bx-x d-block d-sm-none"></i>
                                 <span class="d-none d-sm-block">Close</span>
                             </button>
-                            <button type="submit" name="submit" class="btn btn-primary ml-1">
+                            <button type="submit" name="submit" class="btn btn-success ml-1">
                                 <i class="bx bx-check d-block d-sm-none"></i>
                                 <span class="d-none d-sm-block">Simpan</span>
                             </button>

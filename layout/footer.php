@@ -1,11 +1,11 @@
 <footer>
     <div class="footer clearfix mb-0 text-muted">
         <div class="float-start">
-            <p>2021 &copy; SPK - SAW Method</p>
+            <p class="text-dark" >2022 &copy; KELOMPOK 1</p>
         </div>
         <div class="float-end">
-            <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
-                    href="http://github.com/rickyginting">Ricky Martin Ginting</a></p>
+            <p class="text-dark" >Dibuat dengan<span class="text-danger"><i class="bi bi-heart"></i></span> by 
+            <a class="text-dark">KELOMPOK 1</a></p>
         </div>
     </div>
 </footer>

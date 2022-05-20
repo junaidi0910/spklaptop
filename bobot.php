@@ -6,7 +6,7 @@ require "include/conn.php";
 ?>
 
   <body>
-    <div id="app">
+    <div class="p-3 mb-2 bg-info text-dark" id="app">
       <?php require "layout/sidebar.php";?>
       <div id="main">
         <header class="mb-3">
@@ -15,7 +15,7 @@ require "include/conn.php";
           </a>
         </header>
         <div class="page-heading">
-          <h3>Bobot Kriteria</h3>
+          <h3>Bobot & Kriteria</h3>
         </div>
         <div class="page-content">
           <section class="row">
@@ -23,16 +23,16 @@ require "include/conn.php";
               <div class="card">
 
                 <div class="card-header">
-                  <h4 class="card-title">Tabel Bobot Kriteria</h4>
+                  <h4 class="card-title">Tabel Bobot & Kriteria</h4>
                 </div>
                 <div class="card-content">
                   <div class="card-body">
-                    <p class="card-text">Pengambil keputusan memberi bobot preferensi dari setiap kriteria dengan
-                      masing-masing jenisnya (keuntungan/benefit atau biaya/cost):</p>
+                    <h6 class="card-text">Pengambil keputusan memberi bobot preferensi dari setiap kriteria dengan
+                      masing-masing jenisnya (Benefit atau Cost) :</h6>
                   </div>
                   <div class="table-responsive">
                     <table class="table table-striped mb-0">
-                    <caption>
+                    <caption class="text-dark">
     Tabel Kriteria C<sub>i</sub>
   </caption>
   <tr>
@@ -54,7 +54,7 @@ while ($row = $result->fetch_object()) {
         <td>{$row->weight}</td>
         <td>{$row->attribute}</td>
         <td>
-            <a href='bobot-edit.php?id={$row->id_criteria}' class='btn btn-info btn-sm'>Edit</a>
+            <a href='bobot-edit.php?id={$row->id_criteria}' class='btn btn-warning btn-sm'>Edit</a>
             </td>
       </tr>\n";
 }
